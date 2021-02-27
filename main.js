@@ -1,6 +1,6 @@
-function AzLat2AzCyr(text, typ)
+function AzLat2AzCyr(text, type)
 {
-	let regex = null, letter = null, type = Math.abs(typ),
+	let regex = null, letter = null, type = Math.abs(type),
 			pattern	=	[
 						"A-А",
 						"a-а",
