@@ -1,7 +1,4 @@
-function AzLat2AzCyr(text, type)
-{
-	let regex = null, letter = null, type = Math.abs(type),
-			pattern	=	[
+let pattern	=	[
 						"A-А",
 						"a-а",
 						"B-Б",
@@ -35,7 +32,7 @@ function AzLat2AzCyr(text, type)
 						"K-К",
 						"k-к",
 						"Q-Г",
-						"q-г",						
+						"q-г",					
 						"L-Л",
 						"l-л",
 						"M-М",
@@ -67,14 +64,3 @@ function AzLat2AzCyr(text, type)
 						"Z-З",
 						"z-з"
 					];
-
-	for(let i in pattern)
-	{
-		letter = pattern[i].split("-");
-		regex = new RegExp(letter[0 + type], "gms");
-		text = text.replace(regex, letter[1 - type]);
-
-	}
-
-	return text;
-}
