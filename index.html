@@ -34,8 +34,10 @@
     </script>
     <script type="text/javascript">
        
-            document.getElementById("convert").addEventListener("click", function(){ 
-                document.getElementById("text").value = AzLat2AzCyr(document.getElementById("text").value, 
+        const azlat = (t,p,l,r)=>(p=Math.abs(p),pattern.forEach((v)=>(l=v.split("-"),r=new RegExp(l[0+p],"gms"),t=t.replace(r,l[1-p]))),t);
+
+            document.getElementById("generate").addEventListener("click", function(){ 
+                document.getElementById("text").value = azlat(document.getElementById("text").value, 
                                                                     document.getElementById("type").value);
         });
     </script>
