@@ -1,4 +1,4 @@
-let pattern	=	[
+const pattern	=	[
 						"A-А",
 						"a-а",
 						"B-Б",
