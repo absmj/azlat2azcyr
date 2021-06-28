@@ -7,7 +7,13 @@
     <title>AzLat2AzCyr</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="main.css">
+    <style>
+       textarea {
+           min-height: 300px;
+           resize: none;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -24,7 +30,7 @@
     </nav>
     <div class="container">
         <div class="row d-xl-flex justify-content-xl-center mt-2">
-            <div class="col-12 col-md-10 col-lg-8"><label class="mt-2">Select a convertation type:</label><select id="type" class="custom-select"><option value="0" selected="">Azerbaijani [latin -> cycilic]</option><option value="-1">Azerbaijani [cycilic -> latin]</option></select><textarea class="form-control-lg form-control form-control-sm txtarea mt-2 mb-2 pl-2 pr-2"
+            <div class="col-12 col-md-10 col-lg-8"><label class="mt-2">Select a convertation type:</label><select id="type" class="custom-select"><option value="0" selected="">Azerbaijani [latin -> cycilic]</option><option value="-1">Azerbaijani [cycilic -> latin]</option></select><textarea class="form-control-lg form-control form-control-sm mt-2 mb-2 pl-2 pr-2"
                     placeholder="Please enter the text..." id = "text"></textarea><button class="btn btn-primary" id="generate" type="button"><i class="fas fa-power-off pr-1"></i>Convert</button></div>
         </div>
     </div>
